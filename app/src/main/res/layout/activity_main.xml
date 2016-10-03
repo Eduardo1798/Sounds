@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.edu.myapplication.MainActivity"
+    android:background="#040404">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/uno"
+        android:background="@drawable/perro"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/dos"
+        android:background="@drawable/leon"
+        android:layout_alignTop="@+id/uno"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:layout_marginEnd="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CLICK ON THE BUTTON"
+        android:id="@+id/textView"
+        android:textColor="#fefdfd"
+        android:textSize="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/tres"
+        android:layout_alignTop="@+id/cuatro"
+        android:layout_alignRight="@+id/uno"
+        android:layout_alignEnd="@+id/uno"
+        android:background="@drawable/zombie" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/cuatro"
+        android:layout_below="@+id/dos"
+        android:layout_alignRight="@+id/dos"
+        android:layout_alignEnd="@+id/dos"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/fantasma" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/cinco"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/tres"
+        android:layout_alignLeft="@+id/uno"
+        android:layout_alignStart="@+id/uno"
+        android:background="@drawable/barco" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/seis"
+        android:allowUndo="false"
+        android:background="@drawable/avion"
+        android:layout_alignTop="@+id/cinco"
+        android:layout_alignLeft="@+id/cuatro"
+        android:layout_alignStart="@+id/cuatro" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/siete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:background="@drawable/r2d2" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ocho"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/seis"
+        android:layout_alignStart="@+id/seis"
+        android:background="@drawable/vader" />
+</RelativeLayout>
